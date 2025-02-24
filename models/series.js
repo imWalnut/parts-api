@@ -68,6 +68,18 @@ module.exports = (sequelize, DataTypes) => {
     },
     seriesEnd: {
       type: DataTypes.DATE,
+    },
+    body: {
+      type: DataTypes.BIGINT,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Body can't be allow null",
+        },
+        notEmpty: {
+          msg: "Body can't be allow null",
+        },
+      },
     }
   }, {
     sequelize,

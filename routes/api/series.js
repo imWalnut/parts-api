@@ -15,7 +15,8 @@ function filterUpdate(req) {
     seriesImg: req.body.seriesImg,
     seriesStart: req.body.seriesStart,
     seriesEnd: req.body.seriesEnd,
-    seriesRemark: req.body.seriesRemark
+    seriesRemark: req.body.seriesRemark,
+    body: req.body.body
   };
 }
 
@@ -26,7 +27,8 @@ function filterAdd(req) {
     seriesImg: req.body.seriesImg,
     seriesStart: req.body.seriesStart,
     seriesEnd: req.body.seriesEnd,
-    seriesRemark: req.body.seriesRemark
+    seriesRemark: req.body.seriesRemark,
+    body: req.body.body
   };
 }
 

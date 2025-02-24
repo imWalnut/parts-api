@@ -32,6 +32,11 @@ module.exports = {
         type: Sequelize.STRING(1000),
         allowNull: true,
       },
+      body: {
+        type: Sequelize.BIGINT,
+        default: 0,
+        allowNull: false,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
